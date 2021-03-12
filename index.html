@@ -1,0 +1,226 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images\set2\119233965_2532934786998756_9221822758106916719_n.jpg">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bangers&family=Freckle+Face&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Noble Nihal</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: black;
+           
+            overflow: auto;
+            color: rgb(239, 255, 239);
+        }
+        #container{
+            
+            display: flex;
+            flex-direction: row;
+        }
+        
+        h1{
+            
+            font-family: 'Freckle Face', cursive;
+            margin: auto;
+            margin-top: vw;
+            padding: 1vw 3vw;
+            border-radius: 5vw ;
+            font-size: 10vw;
+            text-shadow: 0 0 15px rgb(90, 209, 21);
+        }
+        h2{
+            box-sizing: border-box;
+            width: fit-content;
+            padding: 25px;
+            font-size: 3vw;
+            margin:auto;
+            font-family: 'Audiowide', cursive;
+            
+        }
+        #photo-div{
+            
+           
+            
+            height: 100vh;
+            width: fit-content;
+           
+           
+        }
+        #cartoon{
+
+            height: 100%;
+           
+        }
+        #text{
+            background-image: linear-gradient(to bottom right,rgb(10, 10, 10));
+            text-align: center;
+            height: 100vh;
+            overflow: auto;
+            flex-grow: 1;
+           
+        }
+        
+        
+
+        ul{
+            display: flex;
+            flex: row wrap;
+            margin: auto;
+            width: fit-content;
+        }
+        ul li{
+            position: relative;
+            display: block;
+            color: rgb(90, 209, 21);
+            font-size: 4vw;
+            height: 6vw;
+            width: 6vw;
+            background: #171515;
+            line-height: 6vw;
+            border-radius: 50%;
+            margin: 2vw 15px;
+            cursor: pointer;
+            transition: .5s;
+        }
+        ul li:before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            height: inherit;
+            width: inherit;
+            /* background: #d35400; */
+            border-radius: 50%;
+            transform: scale(.9);
+            z-index: -1;
+            transition: .5s;
+        }
+       
+        ul li:before{
+            background: #ffffff;
+        }
+        ul li:hover:before{
+        filter: blur(3px);
+        transform: scale(1.2);
+        /* box-shadow: 0 0 15px #d35400; */
+        }
+        
+        ul li:hover:before{
+        box-shadow: 0 0 15px #ffffff;
+        }
+       
+        ul li:hover{
+        color: #ffffff;
+        box-shadow: 0 0 15px #ffffff;
+        text-shadow: 0 0 15px #ffffff;
+        }
+        /* ul li:hover{
+        color: #ffa502;
+        box-shadow: 0 0 15px #d35400;
+        text-shadow: 0 0 15px #d35400;
+        } */
+
+        #name{
+            text-shadow: 0 0 10px rgb(131, 77, 184);
+        }
+        
+        @media only screen and (max-width: 1024px){
+
+        #container{
+            display: flex;
+            flex-direction: column-reverse;
+        } 
+        h1{
+            font-size: 16vw;
+        }
+        h2{
+            font-size: 5vw;
+        }
+        #text{
+            position: relative;
+           
+            background-image: linear-gradient(to bottom right,rgb(10, 10, 10));
+            text-align: center;
+            height: auto;
+        }
+        #photo-div{
+            align-self: center;
+           
+            height: auto;
+            
+        }
+        #cartoon{
+            border: solid 1px #2867B2;
+            width: 100%;
+            height: 100%;
+        }
+        
+        ul{
+            position: absolute;
+            top:0;
+            left:0;
+            display: block;  
+            
+            width: fit-content;
+            margin-top: 6vw;
+
+        }
+        
+
+        
+        }
+    </style>
+  </head>
+  
+  <body>
+    <div id="container">    
+        <div id="photo-div">
+            <img onmouseover="mOver(this)" onmouseout="mOut(this)" src="images/set2/IMG_20210225_200932.png" id="cartoon">
+        </div>
+
+
+        <div id = "text">
+            <h1>Hello!</h1>
+            <h2>I am 
+                <span id="name">
+                Noble Nihal</span>,<br>
+                 Web Designer <br>
+                 and <br>
+                 Python Developer</h2>
+
+            <div id = "links">
+                <ul>
+                    <a href="https://www.facebook.com/nihal.gupta.520" target = "_blank"><li><i class="fab fa-facebook-f"></i></li></a>
+                    <a href="https://www.instagram.com/noble_nihal/" target = "_blank"><li><i class="fab fa-instagram"></i></li></a>  
+                    <a href="https://www.linkedin.com/in/ng11213/" target = "_blank"><li><i class="fab fa-linkedin-in"></i></li></a>  
+                    <a href="https://www.youtube.com/channel/UCP9IzHegrRXVLOtnHr-sxmw" target = "_blank"><li><i class="fab fa-youtube"></i></li></a>  
+                    <a href="https://github.com/thatswrite" target = "_blank"><li><i class="fab fa-github"></i></li></a>  
+                </ul>
+            </div>
+            
+        </div>
+
+    </div>
+   
+    
+    <script>
+        function mOver(obj) {
+            obj.src = "images/set2/20210225201051.jpg"
+}
+
+        function mOut(obj) {
+            obj.src = "images/set2/IMG_20210225_200932.png"
+}
+    </script>
+   
+  </body>
+</html>
